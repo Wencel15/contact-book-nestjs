@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3001
+
+# Contacts
+POST {{baseUrl}}/contact/
+Content-Type: application/json
+
+{
+  "name": "User 1",
+  "email": "user1e@example.com"
+}
+
+###
+GET {{baseUrl}}/contact/
+
+###
+
+PATCH {{baseUrl}}/contact/2
+Content-Type: application/json
+
+{
+  "name": "User 2",
+  "email": "user2@example.com"
+}
+
+
+### 
+DELETE {{baseUrl}}/contact/1/
